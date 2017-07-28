@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f2571">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_message"
+        android:id="@+id/textView"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:allowUndo="true"
+        android:textColor="#ffffff" />
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@android:drawable/ic_menu_compass"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:text="Buttoon 1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:text="Button 2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/button1"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="bluerec"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="blackcir"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:text="PLAY"
+        android:src="@android:drawable/ic_media_play"
+        android:onClick="play"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/button2"/>
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:text="PAUSE"
+        android:src="@android:drawable/ic_media_pause"
+        android:onClick="pause"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/play"/>
+
+
+    <Button
+        android:text="get device id"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pause"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DeviceID</string>
+    <string name="hello_message">Device ID</string>
+</resources>
